@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 – Page Not Found | Filmy4Web</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+    margin:0;
+    font-family:system-ui,-apple-system,sans-serif;
+    background:#0f0f0f;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+.site-header{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    border-bottom:1px solid #222;
+}
+
+.site-header h2{
+    margin:0;
+    color:#e50914;
+    font-weight:700;
+}
+
+.error-box{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 15px;
+}
+
+.error-box h1{
+    font-size:90px;
+    font-weight:700;
+    color:#e50914;
+}
+
+.error-box p{
+    color:#bbb;
+    margin-bottom:20px;
+}
+
+.btn-main{
+    background:#e50914;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.btn-main:hover{
+    background:#b20710;
+    color:#fff;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <h2>Filmy4Web</h2>
+</header>
+
+<div class="error-box container">
+    <div>
+        <h1>404</h1>
+        <h4>Oops! Page Not Found</h4>
+        <p>
+            The page you are looking for doesn’t exist or has been moved.<br>
+            Please return to the homepage.
+        </p>
+
+        <a href="/" class="btn-main">
+            <i class="fas fa-home"></i> Go Home
+        </a>
+    </div>
+</div>
+
+<footer>
+© <strong>Filmy4Web</strong>
+</footer>
+
+</body>
+</html>

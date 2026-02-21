@@ -1,0 +1,102 @@
+<html prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Filmy4Web Privacy Policy - Learn how we use cookies and protect your data while browsing Bollywood & South Indian movies." />
+    <title>Privacy Policy - Filmy4Web</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Privacy Policy - Filmy4Web" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://filmy4hd.in/privacy-policy" />
+    <meta property="og:description" content="Filmy4Web Privacy Policy - How we collect and use cookies and protect user data." />
+    <meta property="og:image" content="https://filmy4hd.in/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Privacy Policy",
+      "url": "https://filmy4hd.in/privacy-policy",
+      "description": "Filmy4Web Privacy Policy - How we collect and use cookies and protect user data."
+    }
+    </script>
+</head>
+<body>
+    <header class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 mb-2">Privacy Policy</h1>
+            <p class="lead mb-4">Filmy4Web - How we protect your data and use cookies</p>
+            <a href="/" class="btn btn-warning btn-lg font-weight-bold">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </div>
+    </header>
+    <div class="container my-5">
+        <p>Welcome to <strong>Filmy4Web</strong>. This Privacy Policy explains how we handle cookies and protect your privacy, consistent with our homepage reference.</p>
+
+        <h3 class="mt-4">1. Cookies and Data Collection</h3>
+        <ul>
+            <li>We collect minimal data to enhance user experience.</li>
+            <li>Anonymous analytics for traffic and usage tracking.</li>
+        </ul>
+
+        <h3 class="mt-4">2. Use of Cookies</h3>
+        <ul>
+            <li>Improve website performance and layout.</li>
+            <li>Personalize content suggestions.</li>
+            <li>Analyze visitor behavior for better recommendations.</li>
+        </ul>
+
+        <h3 class="mt-4">3. Data Protection</h3>
+        <p>We do not sell or share your personal information. Data collected is solely for improving your experience.</p>
+
+        <h3 class="mt-4">4. Third-Party Links</h3>
+        <p>Links on our site may direct to third-party websites. We are not responsible for their privacy practices; please check their pages separately.</p>
+
+        <h3 class="mt-4">5. Consent</h3>
+        <p>By using Filmy4Web and continuing to browse, you consent to our cookie usage as described here.</p>
+
+        <h3 class="mt-4">6. Updates</h3>
+        <p>Any changes to this Privacy Policy will be posted here and linked from the homepage for transparency.</p>
+    </div>
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2026 Filmy4Web. All Rights Reserved.
+        <br>
+        <small>Some links are sponsored or affiliate links. We may earn a small commission at no extra cost to you.</small>
+    </footer>
+    <div id="cookie-consent" class="alert alert-dark fixed-bottom text-center m-0 d-none" role="alert">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="mb-2 mb-md-0">
+          <i class="fas fa-cookie-bite"></i>
+          We use cookies to improve your experience and analyze site traffic. By continuing to browse, you agree to our 
+          <a href="privacy-policy" class="alert-link" title="Read our Privacy Policy">Privacy Policy</a>.
+        </div>
+        <button id="accept-cookies" class="btn btn-warning btn-sm font-weight-bold ml-md-3">
+          Accept
+        </button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script>
+    if (!Cookies.get('user_accepted_cookies')) {
+        document.getElementById('cookie-consent').classList.remove('d-none');
+    }
+
+    document.getElementById('accept-cookies').addEventListener('click', function() {
+        Cookies.set('user_accepted_cookies', 'yes', { expires: 365 });
+        document.getElementById('cookie-consent').classList.add('d-none');
+    });
+
+    setTimeout(() => {
+        if (!Cookies.get('user_accepted_cookies')) {
+            document.getElementById('cookie-consent').classList.add('d-none');
+        }
+    }, 15000);
+    </script>
+
+</body>
+</html>
